@@ -24,7 +24,7 @@ cdk bootstrap aws://{account-id}/us-east-1 aws://{account-id}/us-west-2
 
 #### Optional Parameters
 - `environmentName`: A prefix to apply to resource names (default: `EEPipeline`).
-- `gitRepoUrl`: URL of the project repo to pull for the CodeBuild job, e.g. a fork for working on feature branches. Default is the [upstream project repo]('https://github.com/aws-samples/aws-fault-injection-simulator-workshop-v2.git').
+- `gitRepoUrl`: URL of the project repo to pull for the CodeBuild jobs, e.g. a fork for working on feature branches. Default is the [upstream project repo]('https://github.com/aws-samples/aws-fault-injection-simulator-workshop-v2.git').
 - `gitBranch`: Git branch to pull for the CodeBuild job. The default is an empty string (`""`) for `main`.
 - `isEventEngine`: Set to `false` (default) if deploying in your own account or `true` if deploying in an AWS provided environment, e.g. workshop.
 

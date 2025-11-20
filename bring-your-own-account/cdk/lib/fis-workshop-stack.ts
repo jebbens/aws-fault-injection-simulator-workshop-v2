@@ -202,7 +202,10 @@ export class FisWorkshopStack extends cdk.Stack {
                     },
                     ASSET_BUCKET: {
                         value: assetBucket.bucketName
-                    }
+                    },
+                    GIT_REPO_URL: {
+                        value: gitRepoUrl.valueAsString
+                    },
                 }
             },
             buildSpec: codebuild.BuildSpec.fromObject({
